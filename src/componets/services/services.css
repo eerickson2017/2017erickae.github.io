@@ -1,0 +1,228 @@
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", "sans-serif";
+}
+
+body {
+  background-color: #0c0c1d;
+  color: lightgray;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+section {
+  height: 100vh;
+  scroll-snap-align: center;
+}
+
+.services {
+  background: linear-gradient(180deg, #0c0c1d, #111132);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.services .textContainer {
+  flex: 1;
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.services .textContainer p {
+  font-weight: 200;
+  font-size: 20px;
+  color: gray;
+  text-align: right;
+}
+@media (max-width: 738px) {
+  .services .textContainer p {
+    font-size: 15px;
+  }
+}
+.services .textContainer hr {
+  width: 500px;
+  border: none;
+  border-top: 0.5px solid lightgray;
+}
+@media (max-width: 738px) {
+  .services .textContainer hr {
+    width: 100px;
+  }
+}
+@media (max-width: 1024px) {
+  .services .textContainer hr {
+    width: 200px;
+  }
+}
+.services .titleContainer {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 738px) {
+  .services .titleContainer {
+    flex: 1;
+  }
+}
+@media (max-width: 1024px) {
+  .services .titleContainer {
+    flex: 1;
+    padding: 40px 0;
+  }
+}
+.services .titleContainer .title {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+@media (max-width: 738px) {
+  .services .titleContainer .title {
+    gap: 10px;
+    line-height: 60px;
+  }
+}
+@media (max-width: 1024px) {
+  .services .titleContainer .title {
+    gap: 10px;
+    line-height: 60px;
+  }
+}
+.services .titleContainer .title img {
+  width: 300px;
+  height: 100px;
+  border-radius: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 738px) {
+  .services .titleContainer .title img {
+    width: 150px;
+    height: 50px;
+  }
+}
+@media (max-width: 1024px) {
+  .services .titleContainer .title img {
+    width: 250px;
+    height: 70px;
+  }
+}
+.services .titleContainer .title h1 {
+  font-size: 96px;
+  font-weight: 100;
+}
+@media (max-width: 738px) {
+  .services .titleContainer .title h1 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 1024px) {
+  .services .titleContainer .title h1 {
+    font-size: 58px;
+  }
+}
+.services .titleContainer .title button {
+  background: orange;
+  color: black;
+  font-size: 25px;
+  border: none;
+  padding: 20px;
+  width: 300px;
+  height: 100px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+@media (max-width: 738px) {
+  .services .titleContainer .title button {
+    width: 100px;
+    height: 50px;
+    font-size: 12px;
+    padding: 8px;
+  }
+}
+@media (max-width: 1024px) {
+  .services .titleContainer .title button {
+    width: 250px;
+    height: 70px;
+  }
+}
+.services .listContainer {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: auto;
+  flex-wrap: wrap;
+  margin: 0 15px 15px;
+}
+.services .listContainer .box {
+  border: 1px solid gray;
+  padding: 50px;
+  width: 350px;
+  height: 300px;
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (max-width: 738px) {
+  .services .listContainer .box {
+    width: 180px;
+    height: 200px;
+    padding: 10px;
+    font-size: 15px;
+  }
+}
+@media (max-width: 1024px) {
+  .services .listContainer .box {
+    height: 200px;
+    width: 250px;
+    padding: 25px;
+    font-size: 17px;
+  }
+}
+@media (max-width: 1366px) {
+  .services .listContainer .box {
+    height: 200px;
+    width: 250px;
+    padding: 25px;
+    font-size: 17px;
+  }
+}
+.services .listContainer .box button {
+  align-self: left;
+  width: 200px;
+  height: 50px;
+  background-color: orange;
+  border: none;
+  cursor: pointer;
+}
+@media (max-width: 738px) {
+  .services .listContainer .box button {
+    width: 100px;
+    height: 20px;
+  }
+}
+@media (max-width: 1024px) {
+  .services .listContainer .box button {
+    height: 30px;
+  }
+}
+@media (max-width: 1366px) {
+  .services .listContainer .box button {
+    width: 150px;
+    height: 18px;
+    margin-top: 15px;
+  }
+}/*# sourceMappingURL=services.css.map */

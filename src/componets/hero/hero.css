@@ -1,0 +1,199 @@
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", "sans-serif";
+}
+
+body {
+  background-color: #0c0c1d;
+  color: lightgray;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+section {
+  height: 100vh;
+  scroll-snap-align: center;
+}
+
+.hero {
+  height: calc(100vh - 100px);
+  background: linear-gradient(180deg, #0c0c1d, #111132);
+  position: relative;
+  overflow: hidden;
+  cursor: default;
+}
+.hero .wrapper {
+  max-width: 1240px;
+  height: 100%;
+  margin: auto;
+}
+@media (max-width: 738px) {
+  .hero .wrapper {
+    max-width: 400px;
+    padding: 20px;
+  }
+}
+@media (max-width: 1024px) {
+  .hero .wrapper {
+    max-width: 700px;
+    padding: 20px;
+  }
+}
+.hero .wrapper .textContainer {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+}
+@media (max-width: 738px) {
+  .hero .wrapper .textContainer {
+    gap: 20px;
+    height: 70%;
+  }
+}
+@media (max-width: 1024px) {
+  .hero .wrapper .textContainer {
+    height: 70%;
+  }
+}
+@media (max-width: 1366px) {
+  .hero .wrapper .textContainer {
+    padding-left: 50px;
+  }
+}
+.hero .wrapper .textContainer h2 {
+  font-size: 30px;
+  letter-spacing: 10px;
+  color: rebeccapurple;
+}
+@media (max-width: 738px) {
+  .hero .wrapper .textContainer h2 {
+    font-size: 20px;
+    letter-spacing: 10px;
+  }
+}
+@media (max-width: 1024px) {
+  .hero .wrapper .textContainer h2 {
+    font-size: 20px;
+    letter-spacing: 10px;
+  }
+}
+.hero .wrapper .textContainer h1 {
+  font-size: 88px;
+}
+@media (max-width: 738px) {
+  .hero .wrapper .textContainer h1 {
+    font-size: 60px;
+    line-height: 65px;
+  }
+}
+@media (max-width: 1024px) {
+  .hero .wrapper .textContainer h1 {
+    font-size: 70px;
+    line-height: 65px;
+  }
+}
+@media (max-width: 738px) {
+  .hero .wrapper .textContainer .buttons {
+    margin-top: 20px;
+  }
+}
+.hero .wrapper .textContainer .buttons button {
+  padding: 20px;
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: transparent;
+  color: white;
+  margin-right: 20px;
+  cursor: pointer;
+  font-weight: 300;
+}
+@media (max-width: 738px) {
+  .hero .wrapper .textContainer .buttons button {
+    font-size: 15px;
+    padding: 15px;
+    margin-top: 15px;
+  }
+}
+@media (max-width: 1024px) {
+  .hero .wrapper .textContainer .buttons button {
+    font-size: 15px;
+    padding: 15px;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+.hero .wrapper .textContainer img {
+  width: 50px;
+}
+.hero .imageContainer {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+@media (max-width: 738px) {
+  .hero .imageContainer {
+    top: 40vh;
+    right: -50px;
+  }
+}
+@media (max-width: 1024px) {
+  .hero .imageContainer {
+    top: 30vh;
+    right: -50px;
+  }
+}
+.hero .imageContainer img {
+  height: 100%;
+  max-height: 700px;
+}
+@media (max-width: 738px) {
+  .hero .imageContainer img {
+    max-height: 200px;
+  }
+}
+@media (max-width: 1024px) {
+  .hero .imageContainer img {
+    max-height: 600px;
+  }
+}
+@media (max-width: 1366px) {
+  .hero .imageContainer img {
+    max-height: 600px;
+  }
+}
+.hero .slidingTextContainer {
+  position: absolute;
+  font-size: 50vh;
+  bottom: -120px;
+  white-space: nowrap;
+  color: rgba(255, 255, 255, 0.0352941176);
+  font-weight: bold;
+  width: 50%;
+}
+@media (max-width: 738px) {
+  .hero .slidingTextContainer {
+    font-size: 40vh;
+    color: rgba(255, 255, 255, 0.1254901961);
+    bottom: 0px;
+  }
+}
+@media (max-width: 1024px) {
+  .hero .slidingTextContainer {
+    color: rgba(255, 255, 255, 0.1254901961);
+  }
+}/*# sourceMappingURL=hero.css.map */
