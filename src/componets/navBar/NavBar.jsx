@@ -23,7 +23,7 @@ const NavBar = () => {
           </a>
           <a
             target="_blank"
-            href="https://github.com/eerickson2017/erickae.github.io"
+            href="https://github.com/eerickson2017/2017erickae.github.io"
           >
             <img src="/github.png" alt="" />
           </a>
